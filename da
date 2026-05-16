@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Portfolio</title>
+
+  <link rel="stylesheet" href="../sty.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header-content">
+    <a href="index5.html" class="logo">Ayoub.A</a>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="#about">About</a>
+      <a href="contact2.html" class="btn-sm">Contact</a>
+    </nav>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<section class="hero2">
+ <div class="container2">
+   <h2>Data Analysis · Dashboard</h2> 
+<h1>Sales Performance Dashboard</h1>
+<p>Centralized reporting solution replacing manual Excel workflows and enabling faster, data-driven decisions.
+ </p></div>
+ </section>
+<section class="work-content">
+    <h2>Context</h2>
+    <p>A growing business relied on multiple Excel files for sales reporting, causing delays, errors, and limited visibility.
+
+</p>
+    <h2>Context</h2>
+    <ul>
+       <li>No real-time sales overview</li>
+        <li>Manual reporting took hours each week</li>
+        <li>Inconsistent KPIs across teams</li>
+    </ul>
+      <h2>My Role</h2>
+    <p>End-to-end ownership: data modeling, dashboard design, KPI definition, and automation.</p>
+      <h2>Solution</h2>
+    <p>Built an automated Power BI dashboard connected directly to the sales database, providing a single source of truth.
+
+</p><br>
+  <ul>
+       <li>Cleaned and structured raw data</li>
+        <li>Defined clear KPIs</li>
+        <li>Automated refresh cycles</li>
+        </ul>
+        <h2>Results</h2>
+    <ul>
+           <li>Faster reporting and decision-making</li>
+        <li>Improved visibility across departments</li>
+        <li>Reduced manual workload</li>
+                
+
+    </ul>
+    <h2>Tools & Stack</h2>
+                <p>Power BI . SQL .Excel</p>
+   <div class="galeries-card">
+    <img 
+        src="../images/portfolio/dynamic_pricing_ndr_pmi.png" 
+        alt="Project"
+        onclick="openModal(this.src)"
+    >
+    <h4>Projects Photos Here</h4>
+</div>
+
+<!-- Modal -->
+<div id="imageModal" class="image-modal">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <img id="modalImg">
+</div>
+
+</section>
+<section class="banner">
+  <h2> Would you like to know more ?</h2>
+  <a href="#" class="btn">Inbox Me</a>
+</section>
+<footer class="footer">
+
+  <div class="container footer-grid">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <a href="index5.html" class="footer-logo">Ayoub.A</a>
+      <p>
+        Data analytics, automation, and digital systems built for companies
+        that care about performance.
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="contact2.html">Contact</a>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-links">
+      <h4>Services</h4>
+      <a href="#">Business Intelligence</a>
+      <a href="#">Workflow Automation</a>
+      <a href="#">Revenue Analytics</a>
+      <a href="#">Web Design</a>
+    </div>
+
+    <!-- CTA -->
+    <div class="footer-cta">
+      <h4>Ready to Build?</h4>
+      <p>
+        Let’s turn your data, processes, and digital presence into business growth.
+      </p>
+      <a href="contact2.html" class="footer-btn">Start a Project</a>
+
+      <div class="socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Ayoub Affani. Built with precision.</p>
+  </div>
+
+</footer>
+<script>
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("navMenu");
+const overlay = document.getElementById("menuOverlay");
+
+function toggleMenu() {
+  toggle.classList.toggle("active");
+  nav.classList.toggle("active");
+  overlay.classList.toggle("active");
+}
+
+toggle.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+</script>
+</body>
+</html>
